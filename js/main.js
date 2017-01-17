@@ -28,7 +28,7 @@ $('#close').on('click', function() {
 	$('section').addClass('foreground');
 	$('nav').addClass('navactive');
 	$('.colscontainer').addClass('colscontaineractive');
-	$('.addnoteimg').addClass('addnoteimgactive');
+	$('.addnote').addClass('addnoteactive');
 });
 
 // $('#addnote').on('click', function() {
