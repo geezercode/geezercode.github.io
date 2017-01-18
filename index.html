@@ -23,7 +23,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Ubuntu" rel="stylesheet">
+ <!--    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400|Ubuntu" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -44,15 +45,17 @@
             </p>
         </div>
     </div>
-    <div class="addnotebutton foreground">
+    <div class="addnotebutton">
         <button id="addbutton">Add your own</button>
     </div>
-    <form class="addnote">
-        <p>Please type what you would like to post.</p>
-        <input type="text" id="addnotetext">
-        <button id="addnoteconfirm">Add It</button>
-        <button id="addnoteclose">Close</button>
-    </form>
+    <div class="addnotecontainer">
+        <form class="addnote">
+            <p>Please type what you would like to post.</p>
+            <input type="text" id="addnotetext">
+            <button id="addnoteconfirm">Add It</button>
+            <button id="addnoteclose">Close</button>
+        </form>
+    </div>
     <div class="colscontainer">
         <section>
             <p>This could be, or perhaps their ramie was, in this moment, a peaky waitress.</p>
