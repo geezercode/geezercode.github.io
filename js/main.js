@@ -6,7 +6,7 @@
 //  ( just for the user's web session / proof of concept). Add "add note" or 
 //  "view existing notes"/
 //  sort the design out! header, fonts and colors are weak. 
-//  pleeeease, code validation
+//  pleeeease, code validation   
 //  github / host on markruder.com/notetherapy 
 //  re-qa
 //  maybe, if time allows - configure paralax for notes / a background image (reseach design here)
