@@ -66,6 +66,19 @@
 
   .addnoteactive {
     display: block;
+    border: 1px solid;
+    z-index: 400;
+    position: fixed;
+    top: 300px;
+    left: 300px;
+  }
+
+  .addnotebutton {
+    display:none;
+  }
+
+  .addnotebuttonactive {
+    display: block;
     color: #8437E8;
     position: fixed;
     bottom: 25px;
@@ -73,7 +86,7 @@
     z-index: 300;
   }
 
-  .addnoteactive:hover {
+  .addnotebuttonactive:hover {
     background-color: black; 
   }
 

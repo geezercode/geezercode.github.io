@@ -28,14 +28,28 @@ $('#close').on('click', function() {
 	$('section').addClass('foreground');
 	$('nav').addClass('navactive');
 	$('.colscontainer').addClass('colscontaineractive');
-	$('.addnote').addClass('addnoteactive');
+	$('.addnotebutton').addClass('addnotebuttonactive');
 });
 
-// $('#addnote').on('click', function() {
-// 	$('.aboutoverlay').fadeOut();
-// 	$('section').addClass('foreground');
-// 	$('nav').addClass('navactive');
-// 	$('.colscontainer').addClass('colscontaineractive');
-// });
+$('#addbutton').on('click', function() {
+	$('section').removeClass('foreground');
+	$('.addnote').addClass('addnoteactive');
+	$('.addnote').fadeIn();
+});
+
+$('#addnoteconfirm').on('click', function(e) {
+	e.preventDefault();
+    $('.colscontainer').prepend("<section><p>" + $('#addnotetext').val() + "</p></section>");
+    $('section').addClass('foreground');
+    $('.addnote').fadeOut();
+});
+
+$('#addnoteclose').on('click', function(e) {
+	e.preventDefault();
+	$('.aboutoverlay').fadeOut();
+	$('section').addClass('foreground');
+	$('.addnote').hide();
+
+});
 
 
