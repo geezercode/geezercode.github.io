@@ -14,6 +14,7 @@
 
    body {
    	font-family: 'Ubuntu', sans-serif;
+/*    font-family: 'Source Sans Pro', sans-serif;*/
    	margin: 2px;
    }
 
@@ -73,9 +74,9 @@
     justify-content: center;
     text-align: center;
     position: fixed;
-    top: 50px;
-    right: 250px;
-    left: 250px  ;
+    top: 9.375rem;
+    right: 5.63rem;
+    left: 5.63rem;
   }
 
   .addnote {
@@ -83,12 +84,23 @@
   }
 
   .addnoteactive {
-    display: block;
-    /*border: 1px solid;
-    z-index: 400;
-    position: fixed;
-    top: 300px;
-    left: 300px;*/
+    height: 14rem;
+    border: 1px;
+    background-color: #FFF0AA;
+    text-align: center;
+  }
+
+  .addnoteactive button {
+    width: 50%;
+  }
+
+  .addnoteactive textarea,
+  .addnoteactive textarea:focus {
+    padding: 3rem;
+    background-color: #FFF0AA;
+    border: 0;
+    outline: 0;
+    resize: none;
   }
 
   .addnotebutton {
@@ -97,43 +109,57 @@
 
   .addnotebuttonactive {
     display: block;
-    color: #8437E8;
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 4px;
+    right: 4px;
     z-index: 300;
   }
 
-  .addnotebuttonactive:hover {
-    background-color: black; 
+    .addnotebuttonactive button {
+    border-radius: 1px 1px 0 0;
+    font-size: 1rem;
+    padding: 0.5rem 1.8rem;
+    font-weight: 200;
   }
 
-  .colscontainer section:nth-of-type(6n+0) {
-    /*dark yellow*/
+.addnotecontainer form {
+
+}
+
+.addnotecontainer button {
+  
+}
+
+.addnotecontainer textarea {
+  
+}
+
+/*  .colscontainer section:nth-of-type(5n+0) {
+    dark yellow
     background-color: #FFEC94;
-  }
+  }*/
 
-  .colscontainer section:nth-of-type(6n+1) {
+  .colscontainer section:nth-of-type(5n+0) {
     /*peach*/
     background-color: #FFAEAE;
   }
 
-  .colscontainer section:nth-of-type(6n+2) {
+  .colscontainer section:nth-of-type(5n+1) {
     /*orange*/
     background-color: #FF5049;
   }
 
-  .colscontainer section:nth-of-type(6n+3) {
+  .colscontainer section:nth-of-type(5n+2) {
     /*postit yellow*/
     background-color: #FFF0AA;
   }
 
-  .colscontainer section:nth-of-type(6n+4) {
+  .colscontainer section:nth-of-type(5n+3) {
     /*green*/
   background-color: #B0E57C;
   }
 
-  .colscontainer section:nth-of-type(6n+5) {
+  .colscontainer section:nth-of-type(5n+4) {
     /*baby blue*/
   background-color: #B4D8E7;
   }
@@ -143,7 +169,6 @@
     margin: 5px;
     padding: 5px;
     opacity: 0.3;
-   /* border: 1px solid;*/
     border-radius: 1px;
     transition: opacity 0.2s, color 0.2s;
     z-index: -5;
@@ -176,22 +201,22 @@
     font-size: 1rem;
     color: #FFF;
     z-index:200;
-    border: 1px solid;
     border-radius: 5px;
     box-shadow: 0 3px 11px rgba(0, 0, 0, .1)
   }
 
   button {
-   border-top: 1px solid #96d1f8;
    background-color: #e2c481;
-   padding: 5px 10px;
    border-radius: 8px;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: grey;
+   color: white;
    text-decoration: none;
    vertical-align: middle;
+   padding: 0.5rem 2rem;
    transition: opacity 0.2s, color 0.2s;
+   font-weight:200;
+   margin-top: 0.8rem;
+   font-family: 'Ubuntu', sans-serif;
   }
 
   button:hover {

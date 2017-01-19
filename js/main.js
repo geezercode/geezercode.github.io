@@ -1,4 +1,4 @@
-//  Gerenal outstanding list
+//  General outstanding list
 //
 //  Fix error with icons
 //  use an overlay image to add a note, put it on the bottom right of the screen so it can stay up for the entire session
@@ -35,6 +35,7 @@ $('#addbutton').on('click', function() {
 	$('section').removeClass('foreground');
 	$('.addnote').addClass('addnoteactive');
 	$('.addnote').fadeIn();
+	$('.addnotebutton').fadeOut();
 });
 
 $('#addnoteconfirm').on('click', function(e) {
@@ -42,14 +43,16 @@ $('#addnoteconfirm').on('click', function(e) {
     $('.colscontainer').prepend("<section><p>" + $('#addnotetext').val() + "</p></section>");
     $('section').addClass('foreground');
     $('.addnote').fadeOut();
+    $('.addnotebutton').fadeIn();
+    $('#addnotetext').val('');
 });
 
-$('#addnoteclose').on('click', function(e) {
-	e.preventDefault();
-	$('.aboutoverlay').fadeOut();
-	$('section').addClass('foreground');
-	$('.addnote').hide();
+// $('#addnoteclose').on('click', function(e) {
+// 	e.preventDefault();
+// 	$('.aboutoverlay').fadeOut();
+// 	$('section').addClass('foreground');
+// 	$('.addnote').hide();
 
-});
+// });
 
 
