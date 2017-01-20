@@ -15,7 +15,6 @@ img {
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  margin: 2px;
   margin: 0.125rem;
 }
 
@@ -24,14 +23,12 @@ html {
 }
 
 p {
-  margin: 10px;
   margin: 0.625rem;
   font-weight: 200;
 }
 
 h1 {
   text-transform: uppercase;
-  letter-spacing: 22.72px;
   letter-spacing: 1.42rem;
   font-weight: 200;
 }
@@ -50,53 +47,31 @@ nav {
 
 .navactive  {
   display: block;
-  -webkit-transition: 0.1s linear all;
   transition: 0.1s linear all;
 }
 
 .colscontainer {
-  font-size: 14.4px;
   font-size: 0.9rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .colscontaineractive {
-  margin-top: 90px;
   margin-top: 5.625rem;
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
+  animation: fadeIn 2s;
 }
 
 .addnotecontainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   position: fixed;
-  top: 150px;
   top: 9.375rem;
-  right: 208px;
   right: 13rem;
-  left: 208px;
   left: 13rem;
 }
 
@@ -105,9 +80,7 @@ nav {
 }
 
 .addnoteactive {
-  height: 256px;
   height: 16rem;
-  border: 1px;
   border: 0.0625rem;
   background-color: #FFF0AA;
   text-align: center;
@@ -119,11 +92,8 @@ nav {
 
 .addnoteactive textarea,
 .addnoteactive textarea:focus {
-  width: 400px;
   width: 25rem;
-  height: 150px;
   height: 9.375rem;
-  padding: 16px;
   padding: 1rem;
   background-color: #FFF0AA;
   border: 0;
@@ -138,18 +108,14 @@ nav {
 .addnotebuttonactive {
   display: block;
   position: fixed;
-  bottom: 4px;
   bottom: 0.25rem;
-  right: 4px;
   right: 0.25rem;
   z-index: 300;
 }
 
 .addnotebuttonactive button {
   border-radius: 0.0625rem 0.0625rem 0 0;
-  font-size: 16px;
   font-size: 1rem;
-  padding: 8px 28.8px;
   padding: 0.5rem 1.8rem;
   font-weight: 200;
 }
@@ -181,66 +147,43 @@ nav {
 
 section {
   width: 15%;
-  margin: 5px;
   margin: 0.3125rem;
-  padding: 5px;
   padding: 0.3125rem;
   opacity: 0.3;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
   border-radius: 0.0625rem;
-  -webkit-transition: opacity 0.2s, color 0.2s;
   transition: opacity 0.2s, color 0.2s;
   z-index: -5;
 }
 
 .foreground {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  -webkit-transition: 0.1s linear all;
   transition: 0.1s linear all;
   box-shadow: 0 0.1875rem 0.6875rem rgba(0, 0, 0, .1)
 }
 
 /*overlay stuff*/
 
-@-webkit-keyframes fadeIn {
- from  {opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
- to    {opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
-}
-
 @keyframes fadeIn {
- from  {opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
- to    {opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+ from  {opacity: 0; }
+ to    {opacity: 1; }
 }
 
 .aboutoverlaycontainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   position: fixed;
-  top: 50px;
   top: 3.125rem;
-  right: 250.08px;
   right: 15.63rem;
-  left: 250.08px;
   left: 15.63rem;
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
+  animation: fadeIn 2s;
 }
 
 .aboutoverlaycontainer div {
   background-color: black;
-  padding: 20px;
   padding: 1.25rem;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
   font-size: 1rem;
   color: #FFF;
   z-index:200;
@@ -251,14 +194,11 @@ section {
 button {
  background-color: #e2c481;
  border-radius: 0.5rem;
- text-shadow: rgba(0,0,0,.4) 0 1px 0;
  text-shadow: rgba(0,0,0,.4) 0 0.0625rem 0;
  color: white;
  text-decoration: none;
  vertical-align: middle;
- padding: 8px 32px;
  padding: 0.5rem 2rem;
- -webkit-transition: opacity 0.2s, color 0.2s;
  transition: opacity 0.2s, color 0.2s;
  font-weight:200;
  font-family: 'Ubuntu', sans-serif;
@@ -268,7 +208,6 @@ button:hover {
  color: white;
  background: #E8A937;
  opacity: 1;
- -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 /*Responsive Stuff*/
