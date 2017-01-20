@@ -4,6 +4,7 @@ $('#close').on('click', function() {
   $('nav').addClass('navactive');
   $('.colscontainer').addClass('colscontaineractive');
   $('.addnotebutton').addClass('addnotebuttonactive');
+  
 });
 
 $('#addbutton').on('click', function() {
